@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kiskolabs/heroku-cloudwatch-drain/logparser"
+	"github.com/noragem/gemloggerv2/logparser"
 
 	"github.com/stretchr/testify/assert"
 )

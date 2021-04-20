@@ -18,8 +18,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/cloudwatchlogs"
 	"github.com/honeybadger-io/honeybadger-go"
 	"github.com/jcxplorer/cwlogger"
-	"github.com/kiskolabs/heroku-cloudwatch-drain/logparser"
 	"github.com/newrelic/go-agent"
+	"github.com/noragem/gemloggerv2/logparser"
 )
 
 // App is a Heroku HTTPS log drain. It receives log batches as POST requests,
@@ -54,7 +54,7 @@ func main() {
 
 	nrAppName := os.Getenv("NEW_RELIC_APP_NAME")
 	if nrAppName == "" {
-		nrAppName = "heroku-cloudwatch-drain"
+		nrAppName = "gemloggerv2"
 	}
 
 	nrLicense := os.Getenv("NEW_RELIC_LICENSE_KEY")

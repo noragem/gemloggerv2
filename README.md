@@ -1,8 +1,8 @@
-# heroku-cloudwatch-drain
+# gemloggerv2
 
 A Heroku HTTPS log drain that stores logs in CloudWatch Logs.
 
-[![Build Status](https://travis-ci.org/kiskolabs/heroku-cloudwatch-drain.svg?branch=master)](https://travis-ci.org/kiskolabs/heroku-cloudwatch-drain)
+[![Build Status](https://travis-ci.org/noragem/gemloggerv2.svg?branch=master)](https://travis-ci.org/noragem/gemloggerv2)
 
 ## Getting started
 
@@ -18,13 +18,13 @@ Build and install:
 
 Run:
 
-    $ heroku-cloudwatch-drain
+    $ gemloggerv2
 
 ## Configuration
 
 See all available configuration flags:
 
-    $ heroku-cloudwatch-drain -h
+    $ gemloggerv2 -h
 
 The AWS configuration is picked up from the environment. For a full list of
 environment variables and other ways to configure the AWS region, credentials,
@@ -36,7 +36,7 @@ page.
 
 Set the `HONEYBADGER_API_KEY` environment variable to report panics and errors to Honeybadger.
 
-If you've deployed heroku-cloudwatch-drain to Heroku, see [Honeybadger's Heroku specific instructions](http://docs.honeybadger.io/guides/heroku.html) for more detailed information.
+If you've deployed gemloggerv2 to Heroku, see [Honeybadger's Heroku specific instructions](http://docs.honeybadger.io/guides/heroku.html) for more detailed information.
 
 ## New Relic Integration
 
@@ -45,7 +45,7 @@ Set the `NEW_RELIC_LICENSE_KEY` environment variable to enable the New Relic int
 ## Sending logs
 
 Logs should be sent to this application, with the log group name as the URL
-path. For example, if the heroku-cloudwatch-drain is available at
+path. For example, if the gemloggerv2 is available at
 `https://drain.example.com/`, and you wish to collect logs under the log group
 name `my-app`, the log drain URL should be `https://drain.example.com/my-app`.
 
@@ -70,9 +70,7 @@ The IAM policy containing the minimum required permissions to run this is:
         "logs:PutLogEvents",
         "logs:PutRetentionPolicy"
       ],
-      "Resource": [
-        "*"
-      ]
+      "Resource": ["*"]
     }
   ]
 }

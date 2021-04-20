@@ -1,5 +1,5 @@
 {
-  "name": "heroku-cloudwatch-drain",
+  "name": "gemloggerv2",
   "description": "A Heroku HTTPS log drain that stores logs in CloudWatch Logs.",
   "keywords": [
     "logging",
@@ -8,13 +8,13 @@
     "cloudwatch",
     "logplex"
   ],
-  "website": "https://github.com/kiskolabs/heroku-cloudwatch-drain",
-  "repository": "https://github.com/kiskolabs/heroku-cloudwatch-drain",
+  "website": "https://github.com/noragem/gemloggerv2",
+  "repository": "https://github.com/noragem/gemloggerv2",
   "success_url": "/",
   "env": {
     "USER": {
       "description": "The basic auth username.",
-      "value": "heroku-cloudwatch-drain",
+      "value": "gemloggerv2",
       "required": true
     },
     "PASS": {
