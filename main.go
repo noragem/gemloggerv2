@@ -18,7 +18,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/cloudwatchlogs"
 	"github.com/honeybadger-io/honeybadger-go"
 	"github.com/jcxplorer/cwlogger"
-	"github.com/kiskolabs/heroku-cloudwatch-drain/logparser"
+	"gemloggerv2/logparser"
 	"github.com/newrelic/go-agent"
 )
 

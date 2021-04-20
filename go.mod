@@ -1,4 +1,4 @@
-module github.com/noragem/gemloggerv2
+module gemloggerv2
 
 go 1.15
 
