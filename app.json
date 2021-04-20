@@ -8,8 +8,8 @@
     "cloudwatch",
     "logplex"
   ],
-  "website": "https://github.com/kiskolabs/heroku-cloudwatch-drain",
-  "repository": "https://github.com/kiskolabs/heroku-cloudwatch-drain",
+  "website": "https://github.com/noragem/gemloggerv2",
+  "repository": "https://github.com/noragem/gemloggerv2",
   "success_url": "/",
   "env": {
     "USER": {
